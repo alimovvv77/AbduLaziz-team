@@ -1,0 +1,161 @@
+.main-footer {
+  padding: 40px 10%;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cta-container {
+  display: flex;
+  justify-content: flex-end; 
+  padding-bottom: 40px;
+}
+
+.cta-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.cta-text {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
+
+.get-started-btn {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.footer-divider {
+  height: 1px;
+  background-color: #eeeeee;
+  margin-bottom: 60px;
+}
+
+.footer-links-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 80px;
+}
+
+.footer-subscribe {
+  flex: 1;
+}
+
+.footer-subscribe h3 {
+  font-size: 22px;
+  margin-bottom: 30px;
+  max-width: 200px;
+  color: #333;
+}
+
+.input-group {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  max-width: 300px;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+.arrow-btn {
+  background: #10b981;
+  color: white;
+  border: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.links-group {
+  display: flex;
+  gap: 80px;
+  flex: 2;
+  justify-content: flex-end;
+}
+
+.footer-col h4 {
+  color: #10b981;
+  margin-bottom: 25px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col li {
+  color: #666;
+  margin-bottom: 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.legal span {
+  color: #333;
+  margin-right: 30px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.icon { cursor: pointer; }
+
+
+@media (max-width: 1024px) {
+  .footer-links-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .links-group {
+    justify-content: flex-start;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cta-content {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  .cta-container { justify-content: center; }
+  
+  .links-group {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .footer-bottom {
+    flex-direction: column-reverse;
+    gap: 30px;
+    text-align: center;
+  }
+  .legal span { margin: 0 10px; }
+}
