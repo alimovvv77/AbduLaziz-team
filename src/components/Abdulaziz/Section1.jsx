@@ -7,7 +7,9 @@ import a3 from "../../assets/a3.png"
 import a4 from "../../assets/a4.png"
 import a5 from "../../assets/a5.png"
 import a6 from "../../assets/a6.png"
-import { Play, Star, ArrowRight } from 'lucide-react';
+import CountUp from 'react-countup';
+import { Star, ArrowRight } from 'lucide-react';
+
 import "./Section1.css"
 
 const Section1 = () => {
@@ -47,7 +49,8 @@ const Section1 = () => {
                             <img src={a3} alt="" />
                             <img src={a4} alt="" />
                         </div>
-                        <span className="review-text">15k Well Reviews</span>
+                        <span className="review-text">15k Well <br />
+                            Reviews</span>
                     </div>
                 </div>
 
@@ -63,7 +66,7 @@ const Section1 = () => {
                                 alt="Red Beats"
                                 className="product-img"
                             />
-                            <div className="price-tag">$50</div>
+                            <div className="price-tag">$<CountUp start={0} end={50} duration={2}>50</CountUp></div>
                         </div>
 
                         <div className="play-video-wrapper">

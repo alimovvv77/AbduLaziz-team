@@ -234,6 +234,9 @@
         margin-left: auto;
         margin-right: auto;
     }
+    .curved-text{
+        display: none;
+    }
 
     .play-video-wrapper {
         position: relative;
